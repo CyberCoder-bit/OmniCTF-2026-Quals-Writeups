@@ -48,8 +48,8 @@ Official URL: [https://omnictf.com/](https://omnictf.com/)
 | Challenge | Points |
 |---|---|
 | :x: QuackQuackDiriDiriDuck | 147 |
-| :x: DeadWeight | 95 |
-| ✎ Miletus | 163 |
+| ✎ DeadWeight | 95 |
+| ✎ [Miletus](forensics/Miletus/Miletus.md) | 163 |
 
 **Web**
 | Challenge | Points |
