@@ -65,9 +65,9 @@ Official URL: [https://omnictf.com/](https://omnictf.com/)
 | ✎ [baccarat](misc/baccarat/baccarat-writeup.md) | 61 |
 | :x: Node | 66 |
 | :x: nostalgia | 67 |
-| ✎ Sanity P0zzl3 | 75 |
+| ✎ [Sanity P0zzl3](misc/Sanity-P0zzl3/Sanity-P0zzl3.md) | 75 |
 | :x: Downsize | 91 |
-| ✎ UNcrackable | 97 |
+| ✎ [UNcrackable](misc/UNcrackable/UNcrackable.md) | 97 |
 | :x: A mysterious Codex | 243 |
 
 **OSINT**
@@ -77,4 +77,4 @@ Official URL: [https://omnictf.com/](https://omnictf.com/)
 | :x: Fear | 132 |
 
 ## Reflection
-Unfortunately, I did not solve many challenges as I joined this CTF late. We got 21st out of 778.
+Unfortunately, I did not solve many challenges as I was very busy this weekend. We got 21st out of 778.
