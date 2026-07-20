@@ -1,4 +1,5 @@
 # OmniCTF 2026 Quals - Baccarat Write-Up - Misc
+Authors: AndreiCat & elure
 
 Description: The goal is to learn which side is favored for each visible matchup, then size even-money bets well enough to grow the bankroll to the target.
 
