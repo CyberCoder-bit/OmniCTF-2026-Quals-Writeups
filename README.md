@@ -1,8 +1,10 @@
 # OmniCTF-2026-Quals-Writeups
 
 Date: Fri, 17 July 2026 — Sun, 19 July 2026
+
 Format: Jeopardy
-Official URL: https://omnictf.com/
+
+Official URL: [https://omnictf.com/](https://omnictf.com/)
 
 ## Challenges
 ✎ = full writeup, :x: = no writeup.
