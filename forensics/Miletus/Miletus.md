@@ -269,7 +269,7 @@ On here it states that the malware is KongTuke.
 Therefore, the final answer is **KongTuke**.
 
 
-**Flag:** `OmniCTF{https://gloason.com/white/1rau20bdzx/+SerialNumber+PKCS7+PBKDF2_HMAC-SHA256+8+KongTuke}`
+**Flag:** `OmniCTF{https://gloason.com/white/lrau20bdzx/+SerialNumber+PKCS7+PBKDF2_HMAC-SHA256+8+KongTuke}`
 
 ## Summary:
 Q1 = https://gloason.com/white/lrau20bdzx/ 
@@ -279,4 +279,4 @@ Q4 = PBKDF2_HMAC-SHA256
 Q5 = 8
 Q6 = KongTuke
 
-Combining them gives `OmniCTF{https://gloason.com/white/1rau20bdzx/+SerialNumber+PKCS7+PBKDF2_HMAC-SHA256+8+KongTuke}`.
+Combining them gives `OmniCTF{https://gloason.com/white/lrau20bdzx/+SerialNumber+PKCS7+PBKDF2_HMAC-SHA256+8+KongTuke}`.
