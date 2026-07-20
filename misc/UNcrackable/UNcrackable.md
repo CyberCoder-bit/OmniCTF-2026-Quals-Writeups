@@ -1,5 +1,6 @@
 # OmniCTF 2026 Quals - UNcrackable Write-Up - Misc
 Author: AndreiCat
+
 Welcome to the final exam of the Hash Cracking subject in the haxxor academy
 
 Here is your assignment:
