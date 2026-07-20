@@ -152,7 +152,7 @@ Invoke-Expression $plain
 **Question 1:**
 > What is the URL where the scripts are invoked, including the password present in the script?
 
-First, we check the file for URL like text, and we find:
+First, we check the file for URL-like text, and we find:
 
 $valUrl='https://gloason.com/white/lrau20bdzx/' + $hwid;
 
@@ -264,7 +264,7 @@ After we count all these up, we get a total answer of **8**.
 
 We can search for the URL to identify the malware family. By searching "gloason.com" we find the website https://threatfox.abuse.ch/ioc/1820633/.
 
-On here it states that the malware is KongTuke.
+On here, it states that the malware is KongTuke.
 
 Therefore, the final answer is **KongTuke**.
 
