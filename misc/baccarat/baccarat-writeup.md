@@ -22,4 +22,9 @@ The goal is to get 100k from 1k. The strategy is to precompute win rates for eve
 
 Then we write [script.py](script.py) for automation.
 
+We run it with:
+```bash
+python3 baccarat_client.py <host> <port>
+```
+
 **Flag: Omni{baccarat_kelly_goes_brrrr_6da7b1f}**
