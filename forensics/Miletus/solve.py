@@ -1,3 +1,7 @@
+"""
+Usage:
+    python3 solve.py virus.ps1
+"""
 import re
 import sys
 import base64
@@ -45,6 +49,94 @@ def deobfuscate_readable(content: str) -> str:
     tokens = tokenize(content)
     tokens = collapse_parens(tokens)
     return render_tokens_to_text(tokens)
+
+
+def pretty_print_ps(code: str, indent_str: str = "    ") -> str:
+    """Very small PowerShell pretty-printer: breaks lines on ';' (only at
+    paren-depth 0, so 'for(a;b;c)' headers stay on one line) and on
+    '{'/'}', indenting nested blocks. Respects single- and double-quoted
+    string literals (including '' escapes) so semicolons/braces inside
+    strings don't get split on."""
+    out_lines = []
+    cur = []
+    depth = 0
+    paren_depth = 0
+    i = 0
+    n = len(code)
+    in_single = False
+    in_double = False
+
+    def flush():
+        line = ''.join(cur).strip()
+        if line:
+            out_lines.append(indent_str * depth + line)
+        cur.clear()
+
+    while i < n:
+        c = code[i]
+        if in_single:
+            cur.append(c)
+            if c == "'":
+                if i + 1 < n and code[i+1] == "'":
+                    cur.append(code[i+1])
+                    i += 2
+                    continue
+                in_single = False
+            i += 1
+            continue
+        if in_double:
+            cur.append(c)
+            if c == '"':
+                in_double = False
+            i += 1
+            continue
+        if c == "'":
+            in_single = True
+            cur.append(c)
+            i += 1
+            continue
+        if c == '"':
+            in_double = True
+            cur.append(c)
+            i += 1
+            continue
+        if c == '(':
+            paren_depth += 1
+            cur.append(c)
+            i += 1
+            continue
+        if c == ')':
+            paren_depth = max(0, paren_depth - 1)
+            cur.append(c)
+            i += 1
+            continue
+        if c == '{':
+            cur.append(c)
+            flush()
+            depth += 1
+            i += 1
+            continue
+        if c == '}':
+            flush()
+            depth = max(0, depth - 1)
+            cur.append(c)
+            # peek ahead: if immediately followed by ';', keep it on this line
+            if i + 1 < n and code[i+1] == ';':
+                cur.append(';')
+                i += 1
+            flush()
+            i += 1
+            continue
+        if c == ';' and paren_depth == 0:
+            cur.append(c)
+            flush()
+            i += 1
+            continue
+        cur.append(c)
+        i += 1
+    flush()
+    return '\n'.join(out_lines)
+
 
 
 def xor_decode(blob_b64: str, key_int: int, key_str: str) -> str:
@@ -118,6 +210,12 @@ def main():
         with open(out2, 'w') as f:
             f.write(stage2)
         print(f"[+] wrote fully decoded Stage 2 script  -> {out2}")
+
+        stage2_fmt = pretty_print_ps(stage2)
+        out2_fmt = path + '.stage2.formatted.ps1'
+        with open(out2_fmt, 'w') as f:
+            f.write(stage2_fmt)
+        print(f"[+] wrote formatted Stage 2 script      -> {out2_fmt}")
     except Exception as e:
         print(f"[!] stage2 recovery failed: {e}", file=sys.stderr)
 
