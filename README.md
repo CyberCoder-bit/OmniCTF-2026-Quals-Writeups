@@ -60,7 +60,7 @@ Official URL: https://omnictf.com/
 **Misc**
 | Challenge | Points |
 |---|---|
-| ✎ baccarat | 61 |
+| ✎ [baccarat](baccarat/baccarat-writeup.md) | 61 |
 | :x: Node | 66 |
 | :x: nostalgia | 67 |
 | ✎ Sanity P0zzl3 | 75 |
