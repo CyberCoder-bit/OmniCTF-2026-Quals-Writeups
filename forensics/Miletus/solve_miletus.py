@@ -1,23 +1,3 @@
-"""
-Miletus (KongTuke) PowerShell dropper deobfuscator.
-
-Usage:
-    python3 solve_miletus.py virus.ps1
-
-What it does:
-    1. Uses ps_deobf.py (a small PowerShell-expression tokenizer/evaluator) to
-       collapse the thousands of chained .Insert()/.Remove()/.Replace()/-f/-join
-       string-building calls in the obfuscated script down to plain text, and
-       writes the result to <input>.stage1_readable.txt for manual review.
-    2. Locates the giant base64 blob passed to the custom XOR helper
-       (wKHbqsr1Ft2R) inside the "815050" case block, replicates that XOR
-       routine in Python (key = 4 bytes of an int + UTF8 bytes of a key
-       string), base64-decodes the result, gzip-decompresses it, and writes
-       the fully recovered Stage 2 PowerShell script to <input>.stage2.ps1.
-
-This is purely static analysis -- nothing here executes the malware or makes
-any network connection.
-"""
 import re
 import sys
 import base64
