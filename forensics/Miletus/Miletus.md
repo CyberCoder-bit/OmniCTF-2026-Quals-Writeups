@@ -16,7 +16,7 @@ Password: infected
 ## Solution
 
 ### Deobfuscation
-This is some obfuscated code. Step 1 is to deobfuscate it. I wrote (solve.py)[solve.py] and a helper function named (ps_deobf.py)[ps_deobf.py] to deobfuscate the code.
+This is some obfuscated code. Step 1 is to deobfuscate it. I wrote [solve.py](solve.py) and a helper function named [ps_deobf.py](ps_deobf.py) to deobfuscate the code.
 ```bash
 python3 solve.py virus.ps1
 cat virus.ps1.stage2.formatted.ps1 
