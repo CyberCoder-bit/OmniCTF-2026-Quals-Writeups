@@ -1,4 +1,6 @@
 # OmniCTF 2026 Quals - Sanity P0zzl3 Write-Up - Misc
+Author: AndreiCat
+
 Halftime sanity check!
 
 ## Solution
