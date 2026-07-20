@@ -168,7 +168,7 @@ The first one is supplied directly to the ```Get-ValuePlain``` along with the pa
 $plain = Get-ValuePlain -Url $valUrl -Pass $pass
 ```
 
-You can see that the second one is only stored and never used, so the answer is: **https://gloason.com/white/lrau20bdzx/**.
+You can see that the second one is only stored and only used in the next stage, so the answer is: **https://gloason.com/white/lrau20bdzx/**.
 
 **Question 2:**
 > What is the unusual hexadecimal number appended to the URL?
@@ -228,7 +228,7 @@ for($i=2;$i -le $iter;$i++){
 };
 ```
 
-Then the author manually implements HMAC-SHA256 separately:
+Then the author uses HMAC-SHA256 separately to authenticate the downloaded ciphertext before decrypting it:
 
 ```powershell
 $h=[System.Security.Cryptography.HMACSHA256]::new($macKey);
