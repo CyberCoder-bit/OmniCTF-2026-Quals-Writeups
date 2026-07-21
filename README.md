@@ -11,74 +11,74 @@ Format: Jeopardy
 Official URL: [https://omnictf.com/](https://omnictf.com/)
 
 ## Challenges
-✎ = full writeup, :x: = no writeup.
+✎ = full writeup, • = no writeup.
 
 **Sanity**
 | Challenge | Points |
 |---|---|
-| :x: Rule Check | 1 |
-| :x: Feedback | 1 |
+| • Rule Check | 1 |
+| • Feedback | 1 |
 
 **Binary Exploitation**
 | Challenge | Points |
 |---|---|
-| :x: WinCapture | 74 |
-| :x: DontRISCItJustYet | 87 |
-| :x: nullshui | 99 |
-| :x: RISCBiscReal | 121 |
+| • WinCapture | 74 |
+| • DontRISCItJustYet | 87 |
+| • nullshui | 99 |
+| • RISCBiscReal | 121 |
 
 **Game**
 | Challenge | Points |
 |---|---|
-| :x: Shibiu | 68 |
-| :x: permissiondenied | 71 |
+| • Shibiu | 68 |
+| • permissiondenied | 71 |
 
 **Reverse Engineering**
 | Challenge | Points |
 |---|---|
-| :x: CredVault | 62 |
-| :x: Gatekeep | 68 |
-| :x: Kant | 71 |
-| :x: Pusher | 85 |
+| • CredVault | 62 |
+| • Gatekeep | 68 |
+| • Kant | 71 |
+| • Pusher | 85 |
 
 **Crypto**
 | Challenge | Points |
 |---|---|
-| :x: dual_linera | 56 |
-| :x: orbital-strike-cannon | 60 |
-| :x: Whiskerfield-Meowtin | 62 |
+| • dual_linera | 56 |
+| • orbital-strike-cannon | 60 |
+| • Whiskerfield-Meowtin | 62 |
 
 **Forensics**
 | Challenge | Points |
 |---|---|
-| :x: QuackQuackDiriDiriDuck | 147 |
+| • QuackQuackDiriDiriDuck | 147 |
 | ✎ DeadWeight | 95 |
 | ✎ [Miletus](forensics/Miletus/Miletus.md) | 163 |
 
 **Web**
 | Challenge | Points |
 |---|---|
-| :x: Ganzir | 59 |
-| :x: StayWild | 67 |
-| :x: 0day_2 | 388 |
-| :x: 0day_3 | 500 |
+| • Ganzir | 59 |
+| • StayWild | 67 |
+| • 0day_2 | 388 |
+| • 0day_3 | 500 |
 
 **Misc**
 | Challenge | Points |
 |---|---|
 | ✎ [baccarat](misc/baccarat/baccarat-writeup.md) | 61 |
-| :x: Node | 66 |
-| :x: nostalgia | 67 |
+| • Node | 66 |
+| • nostalgia | 67 |
 | ✎ [Sanity P0zzl3](misc/Sanity-P0zzl3/Sanity-P0zzl3.md) | 75 |
-| :x: Downsize | 91 |
+| • Downsize | 91 |
 | ✎ [UNcrackable](misc/UNcrackable/UNcrackable.md) | 97 |
-| :x: A mysterious Codex | 243 |
+| • A mysterious Codex | 243 |
 
 **OSINT**
 | Challenge | Points |
 |---|---|
-| :x: Believer | 72 |
-| :x: Fear | 132 |
+| • Believer | 72 |
+| • Fear | 132 |
 
 ## Reflection
 Unfortunately, I did not solve many challenges as I was very busy this weekend. We got 21st out of 778.
