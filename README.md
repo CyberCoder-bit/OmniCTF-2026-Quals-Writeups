@@ -2,7 +2,7 @@
 
 Written By: __jason___
 
-Disclaimer: While I did not rely on AI to slop these writeups, AI might have been used in accordance with the contest's AI Policy to help me write some of the scripts/exploits used in these writeups.
+> Disclaimer: While I did not rely on AI to slop these writeups, AI might have been used in accordance with the contest's AI Policy to help me write some of the scripts/exploits used in these writeups.
 
 Date: Fri, 17 July 2026 — Sun, 19 July 2026
 
