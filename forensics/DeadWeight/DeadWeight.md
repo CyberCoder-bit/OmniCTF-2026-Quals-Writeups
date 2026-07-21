@@ -126,7 +126,7 @@ The final answer is: **CTF{MAsquerade_IS_drunk}**.
 **Question 5:**
 > What is the second flag? (Flag format: ctf{sha256})
 
-The second flag is encrypted using this...
+From the same PasteBin link, we see that the second flag is encrypted using this...
 
 ```python
 ##Is this the flag???!??Idk man...I am calling Andrei here.I only do forensics 
