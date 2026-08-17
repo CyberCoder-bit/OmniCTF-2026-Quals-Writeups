@@ -60,7 +60,7 @@ The SID S-1-5-21-3266328033-1872285240-1484667356-1001 resolves to Masquerade an
 > When did the user delete the flag.txt? (Ex:OmniCTF{07/02/2025 7:20})
 We can look at the console history by running this line of code:
 ```bash
-jason@MainXuComputer:/mnt/c/Users/linaw/Downloads$ vol -f deadweight.raw windows.consoles.Consoles
+$ vol -f deadweight.raw windows.consoles.Consoles
 ```
 We notice one interesting line:
 ```bash
